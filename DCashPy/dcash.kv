@@ -1,0 +1,27 @@
+<folder_dialog_layout>:
+    orientation: 'vertical'
+    size_hint_y:None
+    spacing: "10dp"
+    padding: "10dp"
+    height: "120dp"
+
+    MDRaisedButton:
+        text: "Browse"
+        on_release:
+            root.FM()
+
+    MDLabel:
+        id: folder_selected_label
+        text: "Current Folder: "
+        size: "60dp", "40dp"
+        size_hint: None, None
+
+    MDRaisedButton:
+        id: folder_ok_btn
+        text: "OK"
+        disabled: True
+        on_release: root.folder_ok()
+        
+<unit_dialog_layout>:
+    size_hint_y: None
+    height: "150dp"
